@@ -12,7 +12,6 @@ void swap(int *major, int *minor)
 	*major = *minor;
 	*minor = tmp;
 }
-
 /**
  * bubble_sort - Function that sorts an array of integers in
  * ascending order(Bubble sort)
