@@ -1,4 +1,5 @@
 #include "sort.h"
+
 /**
  * swap - Function that swaps two numbers in an array
  * @major: previous position
