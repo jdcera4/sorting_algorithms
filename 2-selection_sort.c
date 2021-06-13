@@ -4,13 +4,16 @@
  * swap - Function that swaps two numbers in an array
  * @major: previous position
  * @minor: next position
+ * @array: an array of integers
+ * @size: the size of the array
  */
-void swap(int *major, int *minor)
+void swap(int *major, int *minor, int *array, size_t size)
 {
 	int tmp = *major;
 
 	*major = *minor;
 	*minor = tmp;
+	print_array(array, size);
 }
 /**
  * selection_sort - Function that sorts an array of integers in
@@ -27,11 +30,13 @@ void selection_sort(int *array, size_t size)
 		/*Find the minimum element in unsorted array*/
 		minor = i;
 		for (j = i + 1; j < size; j++)
+		{
 			if (array[j] < array[minor])
+			{
 				minor = j;
-		/*Swap the found minimum element with the first element*/
-		printf("%ld-", minor);
-		swap(&array[minor], &array[i]);
-		print_array(array, size);
+			}
+		}
+		if (minor != i)
+			swap(&array[minor], &array[i], array, size);
 	}
 }
