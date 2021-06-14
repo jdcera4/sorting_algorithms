@@ -28,5 +28,6 @@ void quick_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void iterator(int *array, int index_lowest, int index_highest);
 int partition(int *array, int index_lowest, int index_highest);
+void selection_sort(int *array, size_t size);
 
 #endif
