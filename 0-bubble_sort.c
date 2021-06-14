@@ -2,7 +2,7 @@
 
 
 /**
- * swap - Function that swaps two numbers in an array
+ * swapo - Function that swaps two numbers in an array
  * @major: previous position
  * @minor: next position
  */
